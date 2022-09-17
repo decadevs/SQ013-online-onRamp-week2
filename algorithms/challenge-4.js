@@ -1,10 +1,14 @@
 function squareDigit(str) {
-  x = Number( str.split('').map((i) => { 
-    return i * i;
-  }).join('')
+  x = Number(
+    str
+      .split("")
+      .map((i) => {
+        return i * i;
+      })
+      .join("")
   );
- return x
- }
+  return x;
+}
 
-console.log(squareDigit('9119'))
-  module.exports =squareDigit
+console.log(squareDigit("345"));
+module.exports = squareDigit;

@@ -28,6 +28,9 @@ h2 {
   margin-top: 0;
   font-size: 40px;
 }
+form {
+  display: inline-block;
+}
 input {
   height: 45px;
   width: 300px;
@@ -46,7 +49,7 @@ input {
   color: #4c5459;
   border: 2px solid #d5dbd7;
   width: 1000px;
-  height: 450px;
+  height: auto;
   margin-left: 150px;
   margin-top: 20px;
 }

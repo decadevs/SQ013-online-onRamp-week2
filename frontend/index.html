@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="This is my week 2 assignment that contains both the algorithm and the frontend">
+  <title>CHRIS ESUMOBI-SQ013-ONLINE-ONRAMP-WEEK2 BY </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="header">
+    <h2>Item Lister</h2>
+  </div>
+  <div class="main">
+    <h2 id="add_items">Add Items</h2>
+    <input type="text" name="items" id="items"><input type="submit" name="submit" id="submit">
+    <h2 id="add_items">Items</h2>
+    <div class="to-dos" id="toDoContainer"></div>
+  </div>
+
+  <script>
+    let addToDoButton = document.getElementById("submit");
+    let addToDoList = document.getElementById("toDoContainer");
+    let inputField = document.getElementById("items");
+
+    addToDoButton.addEventListener("click", function(){
+      var paragraph = document.createElement("p")
+      paragraph.classList.add("paragraph-styling")
+      paragraph.innerText = inputField.value;
+      toDoContainer.appendChild(paragraph);
+      inputField.value = "";
+    })
+  </script>
+
+  <script src="../algorithms/challenge-4.js"></script>
+</body>
+</html>

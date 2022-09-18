@@ -27,8 +27,8 @@ For example, when an array is passed like [19, 5, 42, 2, 77], the output should 
 Implement the function alphabetPosition(text) that given given a string, replace every letter with its position in the alphabet.
 # Example
   alphabetPosition('developer')  to return '4 5 22 5 12 15 16 5 18'
-     alphabetPosition('decadev') to return '4 5 3 1 4 5 22'
-     alphabetPosition('success') to return '19 21 3 5 19 19'
+  alphabetPosition('decadev') to return '4 5 3 1 4 5 22'
+  alphabetPosition('success') to return '19 21 3 5 19 19'
 
 
 # Challenge 4

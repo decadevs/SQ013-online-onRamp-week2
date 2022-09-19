@@ -1,15 +1,11 @@
-function alphabetPosition(text) {
-  if (text.match(/[a-z]/gi)) {
-    let justAlphabet = text.match(/[a-z]/gi).join("").toLowerCase();
-    let alphabet = "abcdefghijklmnopqrstuvwxyz";
-    let a = [];
-    for (let i = 0; i < justAlphabet.length; i++) {
-      a.push(alphabet.indexOf(justAlphabet[i]) + 1);
-    }
-    return a.join(" ");
-  } else {
-    return "";                                               
+let alphabets = "abcdefghijklmnopqrstuvwxyz"
+function alphabetPosition(text){
+  let result = []
+  for(let i=0; i<text.length; i++){
+    let output = alphabets.indexOf(text[i]) + 1
+    result.push(output)
   }
+  return result
 }
 console.log(alphabetPosition("decadev"))
 console.log(alphabetPosition('success'))

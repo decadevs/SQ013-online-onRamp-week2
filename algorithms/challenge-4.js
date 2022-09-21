@@ -1,6 +1,9 @@
 function squareDigit(str){
-    return str.split('').map((elem) => Math.pow(elem, 2)).join('')
-   }
+    let splitStr = str.split('');
+    let powerStr = splitStr.map((elem) => Math.pow(elem,2))
+    let join = powerStr.join('')
+    return join
+  }
    console.log(squareDigit('9119'))
    console.log(squareDigit('289'))
    console.log(squareDigit('345'))
